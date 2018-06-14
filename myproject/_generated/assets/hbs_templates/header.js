@@ -1,7 +1,9 @@
 define(["handlebars"], function(Handlebars) { return Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "    <header class=\"hero\">\n        <div class=\"container\">\n            <div class=\"hero-content\">\n                <h1 class=\"hero-title\">"
+  return "    <header class=\"hero\" style=\"background-image: url('"
+    + alias4(((helper = (helper = helpers.bg_image || (depth0 != null ? depth0.bg_image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"bg_image","hash":{},"data":data}) : helper)))
+    + "')\">\n        <div class=\"container\">\n            <div class=\"hero-content\">\n                <h1 class=\"hero-title\">"
     + alias4(((helper = (helper = helpers.firstTitle || (depth0 != null ? depth0.firstTitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"firstTitle","hash":{},"data":data}) : helper)))
     + "<span>"
     + alias4(((helper = (helper = helpers.secondTitle || (depth0 != null ? depth0.secondTitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"secondTitle","hash":{},"data":data}) : helper)))

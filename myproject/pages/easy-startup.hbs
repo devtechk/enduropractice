@@ -41,42 +41,12 @@
     <section id="main">
         <div class="container">
             <h2 class="welcome">
-                {{welcome}}
+                {{#files '/assets/images/'}}
+                    <p>Image: {{this}}</p>
+                {{/files}}
             </h2>
         </div>
     </section>
-<!--    <article class="markdown-body">
-        <div class="container">
-            <p>Here is a simple boiler-plate to start coding sites and edit on the fly <span>(auto css compiling)!</span></p>
-            <p>Include:</p>
-            <ul class="list">
-                <li>gulp</li>
-                <li>browser-sync</li>
-                <li>gulp-sass</li>
-                <li>nodemon</li>
-                <li>sass</li>
-            </ul>
-            <h3 class="welcome">Requirements</h3>
-            <p>Just install node.js <a href="https://blog.hellotangible.com/an-absolute-beginners-guide-to-node-js-c27e6d108b5c">easy, click</a> </p>
-            <ul class="list">
-                <li>node.js</li>
-                <li>npm</li>
-            </ul>
-            <h3 class="welcome">Install</h3>
-            <p>Be sure to have node.js (and npm) installed on your computer, then go to the directory with your terminal
-                and run:</p>
-            <div class="list">
-                <pre><code>npm install</code></pre>
-            </div>
-            <h3 class="welcome">Use it!</h3>
-            <p>To run go to the directory open a terminal window and run:</p>
-            <div class="list">
-                <pre><code>npm run start</code></pre>
-            </div>
-            <p>A page will be open, this will watch sass and html files.</p>
-
-        </div>
-    </article>-->
     <footer>
         <div class="container">
             <h3><a id="user-content-support-or-contact" class="anchor" aria-hidden="true"
