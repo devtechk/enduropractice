@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--
+      The above 2 meta tags *must* come first in the <head>
+      to consistently ensure proper document rendering.
+      Any other head element should come *after* these tags.
+     -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/style-easy.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+    <title>Easy-startup-gulp-browsersync-sass</title>
+    <style>
+    </style>
+</head>
+<body>
+<div class="main">
+{{>header}}
+    <article class="markdown-body">
+        <div class="container">
+            {{#each instruction_points}}
+                <h3 class="welcome">{{header}}</h3>
+                <p>{{tagline}}</p>
+                <ul class="list">
+                {{#each items}}
+                    <li>{{item}}</li>
+                {{/each}}
+                    {{#if itemsCode}}
+                        {{#each itemsCode}}
+                            <li><pre><code>{{item}}</code></pre></li>
+                        {{/each}}
+                    {{/if}}
+                </ul>
+            {{/each}}
+        </div>
+    </article>
+
+    <section id="main">
+        <div class="container">
+            <h2 class="welcome">
+                {{welcome}}
+            </h2>
+        </div>
+    </section>
+<!--    <article class="markdown-body">
+        <div class="container">
+            <p>Here is a simple boiler-plate to start coding sites and edit on the fly <span>(auto css compiling)!</span></p>
+            <p>Include:</p>
+            <ul class="list">
+                <li>gulp</li>
+                <li>browser-sync</li>
+                <li>gulp-sass</li>
+                <li>nodemon</li>
+                <li>sass</li>
+            </ul>
+            <h3 class="welcome">Requirements</h3>
+            <p>Just install node.js <a href="https://blog.hellotangible.com/an-absolute-beginners-guide-to-node-js-c27e6d108b5c">easy, click</a> </p>
+            <ul class="list">
+                <li>node.js</li>
+                <li>npm</li>
+            </ul>
+            <h3 class="welcome">Install</h3>
+            <p>Be sure to have node.js (and npm) installed on your computer, then go to the directory with your terminal
+                and run:</p>
+            <div class="list">
+                <pre><code>npm install</code></pre>
+            </div>
+            <h3 class="welcome">Use it!</h3>
+            <p>To run go to the directory open a terminal window and run:</p>
+            <div class="list">
+                <pre><code>npm run start</code></pre>
+            </div>
+            <p>A page will be open, this will watch sass and html files.</p>
+
+        </div>
+    </article>-->
+    <footer>
+        <div class="container">
+            <h3><a id="user-content-support-or-contact" class="anchor" aria-hidden="true"
+                   href="#support-or-contact"></a>Support or Contact</h3>
+            <p>Having trouble with Pages? Contact me <a
+                    href="https://github.com/devtechk">Devtech</a></p>
+            <p>---</p>
+            <p>This is an example page with its relative style (SASS) you can start working.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
