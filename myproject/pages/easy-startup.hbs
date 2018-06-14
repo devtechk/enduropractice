@@ -27,14 +27,6 @@
                 <ul class="list">
                 {{#each items}}
                     <li>{{item}}</li>
-                    {{#each move_images}}
-                        {{#each move_it}}
-                            <img width="auto" height="150" src="{{example_image}}" alt="">
-                        {{/each}}
-                        {{#each move_it_1}}
-                            <img width="auto" height="150" src="{{example_image_1}}" alt="">
-                        {{/each}}
-                    {{/each}}
                 {{/each}}
                     {{#if itemsCode}}
                         {{#each itemsCode}}
@@ -47,13 +39,15 @@
     </div>
     </article>
 
-    <section id="main">
+    <section class="the-wall">
         <div class="container">
-            <h2 class="welcome">
-                {{#files '/assets/images/'}}
-                    <p>Image: {{this}}</p>
-                {{/files}}
-            </h2>
+            {{#each move_images}}
+                {{#each move_it}}
+                    <div class="img-block">
+                        <img class="img-random" src="{{example_image}}" alt="">
+                    </div>
+                {{/each}}
+            {{/each}}
         </div>
     </section>
     <footer>

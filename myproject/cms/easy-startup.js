@@ -10,16 +10,22 @@
 		{
 			move_it: [
 				{
-                    $example_image_type: 'image',
-                    example_image: '/remote/direct_uploads/1528992638_background.jpg'
+					$example_image_type: 'image',
+					example_image: '/remote/direct_uploads/1529013670_31466815_1654460561276533_3551056541269444717_n.jpg'
+				},
+				{
+					$example_image_type: 'image',
+					example_image: '/remote/direct_uploads/1529012730_31466815_1654460561276533_3551056541269444717_n.jpg'
+				},
+				{
+					$example_image_type: 'image',
+					example_image: '/remote/direct_uploads/1529013675_31466815_1654460561276533_3551056541269444717_n.jpg'
+				},
+				{
+					$example_image_type: 'image',
+					example_image: '/remote/direct_uploads/1529013679_31466815_1654460561276533_3551056541269444717_n.jpg'
 				}
-			],
-            move_it_1: [
-                {
-                    $example_image_1_type: 'image',
-                    example_image_1: '/remote/direct_uploads/1528992638_background.jpg'
-                }
-            ]
+			]
 		}
 	],
 	instruction_points: [
