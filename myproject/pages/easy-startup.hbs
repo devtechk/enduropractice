@@ -27,6 +27,14 @@
                 <ul class="list">
                 {{#each items}}
                     <li>{{item}}</li>
+                    {{#each move_images}}
+                        {{#each move_it}}
+                            <img width="auto" height="150" src="{{example_image}}" alt="">
+                        {{/each}}
+                        {{#each move_it_1}}
+                            <img width="auto" height="150" src="{{example_image_1}}" alt="">
+                        {{/each}}
+                    {{/each}}
                 {{/each}}
                     {{#if itemsCode}}
                         {{#each itemsCode}}
@@ -35,7 +43,8 @@
                     {{/if}}
                 </ul>
             {{/each}}
-        </div>
+
+    </div>
     </article>
 
     <section id="main">

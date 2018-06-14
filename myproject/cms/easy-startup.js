@@ -6,6 +6,22 @@
 		$bg_image_type: 'image',
 		bg_image: '/remote/direct_uploads/1528992638_background.jpg'
 	},
+	move_images: [
+		{
+			move_it: [
+				{
+                    $example_image_type: 'image',
+                    example_image: '/remote/direct_uploads/1528992638_background.jpg'
+				}
+			],
+            move_it_1: [
+                {
+                    $example_image_1_type: 'image',
+                    example_image_1: '/remote/direct_uploads/1528992638_background.jpg'
+                }
+            ]
+		}
+	],
 	instruction_points: [
 		{
 			header: 'Welcome!',
